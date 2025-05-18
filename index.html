@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Govardhan Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body class="bg-gray-900 text-white scroll-smooth">
+
+  <!-- Navigation Bar -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-gray-900 bg-opacity-90 shadow-md">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      
+    <div class="flex items-center space-x-3">
+        <img src="./profile.jpeg" alt="Govardhan Dande" class="w-10 h-10 rounded-full border-2 border-blue-500 shadow" />
+        <h1 class="text-xl font-bold">Govardhan</h1>
+    </div>
+      <ul class="flex space-x-6 font-medium">
+        <li><a href="#home" class="hover:text-blue-400 transition">Home</a></li>
+        <li><a href="#certifications" class="hover:text-blue-400 transition">Certifications</a></li>   
+        <li><a href="#education" class="hover:text-blue-400 transition">Education</a></li>
+        <li><a href="#contact" class="hover:text-blue-400 transition">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- Hero / Intro Section -->
+<section id="home" class="relative h-screen flex flex-col items-center justify-center text-center bg-cover bg-center pt-16" style="background-image: url('https://img.freepik.com/free-photo/abstract-technology-background_23-2148897676.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative z-10 text-white">
+    <h1 id="typed-text" class="text-7xl font-bold min-h-[6rem]" data-aos="fade-up"></h1>
+    <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                    const text = "Hello, I'm<br> Govardhan Dande";
+                    const target = document.getElementById("typed-text");
+                    let i = 0;
+                    function type() {
+                            if (i < text.length) {
+                                    if (text.slice(i, i+4) === "<br>") {
+                                            target.innerHTML += "<br>";
+                                            i += 4;
+                                    } else {
+                                            target.innerHTML += text[i];
+                                            i++;
+                                    }
+                                    setTimeout(type, 70);
+                            }
+                    }
+                    type();
+            });
+    </script>
+        <p class="text-lg text-gray-300 max-w-2xl mx-auto mt-4" data-aos="fade-up">I am passionate about exploring technology and creative digital editing. With a strong interest in both development and design, I bring ideas to life in a visually appealing and functional way. Whether it's crafting a website or designing thumbnails and videos, I put my full energy into making impactful content.</p>
+    <div class="mt-8 flex justify-center space-x-6" data-aos="fade-up">
+        <a href="https://www.linkedin.com/in/govardhan-dande-87a107327/" class="text-gray-300 font-bold hover:text-white transition">LinkedIn</a>
+        <a href="https://github.com/krish-05-tech" class="text-gray-300 font-bold hover:text-white transition">GitHub</a>
+        <a href="https://www.instagram.com/i_am_govardhan_19/" class="text-gray-300 font-bold hover:text-white transition">Instagram</a>
+    </div>
+    </div>
+</section>
+
+<!-- Certifications & Education Side by Side -->
+<section class="px-6 py-16 bg-gray-900">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-10">
+        <!-- Certifications -->
+        <div id="certifications" class="flex-1 bg-gray-900">
+            <h2 class="text-4xl font-bold mb-8 text-center text-white" data-aos="fade-up">Certifications</h2>
+            <div class="flex flex-wrap justify-center gap-6">
+                <div class="bg-gradient-to-tr from-purple-500 to-pink-500 text-white px-6 py-4 rounded-2xl shadow-lg w-72 transform transition hover:scale-105" data-aos="fade-up" data-aos-delay="100">
+                    <h4 class="font-semibold text-xl">Certified Web Developer</h4>
+                    <p class="text-sm">Issued by Udemy</p>
+                    <p class="text-xs text-gray-200">Date: --/2025</p>
+                </div>
+            </div>
+        </div>
+        <!-- Education -->
+        <div id="education" class="flex-1  rounded-2xl shadow-lg p-6">
+            <h2 class="text-4xl font-bold mb-8 text-center text-white" data-aos="fade-up">Education</h2>
+            <div class="space-y-6">
+                <div class="flex justify-center">
+                    <div class="bg-gradient-to-tr from-purple-500 to-pink-500 text-white px-6 py-4 rounded-2xl shadow-lg w-72 transform transition hover:scale-105" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="text-2xl font-semibold text-center">Bachelor of Technology in Computer Science</h3>
+                        <p class="text-gray-300 text-center">Indian Institute of Information Technology , Sricity , 2024 - 2028</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Skills Section -->
+<section id="skills" class="px-6 py-16 bg-gradient-to-r from-gray-800 to-gray-900">
+    <h2 class="text-4xl font-bold mb-10 text-center text-white" data-aos="fade-up">My Skills</h2>
+    <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center" data-aos="fade-up" data-aos-delay="100">
+            <span class="text-3xl mb-2">💻</span>
+            <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+            <p class="text-gray-300 text-center">HTML, CSS, JavaScript, Tailwind CSS, React</p>
+        </div>
+        <div class="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center" data-aos="fade-up" data-aos-delay="200">
+            <span class="text-3xl mb-2">🖌️</span>
+            <h3 class="text-xl font-semibold mb-2">Design & Editing</h3>
+            <p class="text-gray-300 text-center">Photoshop, Canva, Video Editing, Thumbnail Design</p>
+        </div>
+        <div class="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center" data-aos="fade-up" data-aos-delay="300">
+            <span class="text-3xl mb-2">⚙️</span>
+            <h3 class="text-xl font-semibold mb-2">Programming</h3>
+            <p class="text-gray-300 text-center">Python, C, Problem Solving</p>
+        </div>
+        <div class="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center" data-aos="fade-up" data-aos-delay="400">
+            <span class="text-3xl mb-2">🌐</span>
+            <h3 class="text-xl font-semibold mb-2">Version Control</h3>
+            <p class="text-gray-300 text-center">Git, GitHub</p>
+        </div>
+        <div class="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center" data-aos="fade-up" data-aos-delay="500">
+            <span class="text-3xl mb-2">🗣️</span>
+            <h3 class="text-xl font-semibold mb-2">Communication</h3>
+            <p class="text-gray-300 text-center">Teamwork, Presentation, Content Creation</p>
+        </div>
+        <div class="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center" data-aos="fade-up" data-aos-delay="600">
+            <span class="text-3xl mb-2">🔍</span>
+            <h3 class="text-xl font-semibold mb-2">Learning & Research</h3>
+            <p class="text-gray-300 text-center">Continuous Learning, Tech Exploration</p>
+        </div>
+    </div>
+</section>
+
+  <!-- Contact -->
+<section id="contact" class="px-6 py-16 bg-gradient-to-r from-gray-800 to-gray-700">
+    <h2 class="text-4xl font-bold mb-8 text-center text-white" data-aos="fade-up">Contact Me</h2>
+    <div class="max-w-3xl mx-auto bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-8 text-white shadow-xl" data-aos="fade-up" data-aos-delay="100">
+        <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+            <div class="flex-1 text-center md:text-left">
+                <h3 class="text-2xl font-semibold mb-2">Govardhan Dande</h3>
+                <p class="mb-2"><span class="font-semibold">Email:</span> <a href="mailto:govardhandande2@gmail.com" class="text-blue-400 hover:underline">govardhandande2@gmail.com</a></p>
+                <p class="mb-2"><span class="font-semibold">Phone:</span> <a href="tel:+918074851360" class="text-blue-400 hover:underline">+91 80748 51360</a></p>
+                <p class="mb-2"><span class="font-semibold">Location:</span> Sricity, Andhra Pradesh, India</p>
+            </div>
+            <div class="flex-1 flex flex-col items-center space-y-3">
+                <a href="https://www.linkedin.com/in/govardhan-dande-87a107327/" class="text-gray-300 font-bold hover:text-white transition">LinkedIn</a>
+                <a href="https://github.com/krish-05-tech" class="text-gray-300 font-bold hover:text-white transition">GitHub</a>
+                <a href="https://www.instagram.com/i_am_govardhan_19/" class="text-gray-300 font-bold hover:text-white transition">Instagram</a>
+            </div>
+        </div>
+        <p class="mt-8 text-center text-gray-300">Feel free to reach out to me via email or connect on social media!</p>
+    </div>
+</section>
+
+  <footer class="py-6 text-center bg-gray-900 text-gray-400">
+    <p>© 2025 Govardhan Dande</p>
+    
+  </footer>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
